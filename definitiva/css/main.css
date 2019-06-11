@@ -1,0 +1,41 @@
+
+
+
+#cercar {
+    margin-left: 100px;
+}
+
+
+.navbar {
+    
+    opacity: .9;
+    min-height: 100px;
+}
+
+.navbar {
+    position: static;
+}
+
+.navbar .nav > li {
+    z-index: 10000;
+    }
+
+.dropdown, .dropdown-menu {
+        z-index:2;
+      }
+.navbar {
+        position: static;
+        z-index: 1;
+      }
+
+.temaindex{
+    position:relative;
+    z-index: 10000;
+}
+
+.titolNovetats {
+    font-size:1.1em;
+    font-style: italic;
+    text-decoration:underline; 
+}
+

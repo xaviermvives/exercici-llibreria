@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="validarRegistre.js"></script>
+
+    <title>Modal Registre</title>
+    <style>
+        .error {
+            border: 1px solid red;
+        }
+    </style>
+  </head>
+  <body>
+    
+
+<div class="container">
+
+        <div class="container">
+            <h2>Small Modal</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+              
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Formulari de registre</h4>
+                      </div>
+                      <div class="modal-body"> 
+                            
+                            <form action="" class="main-form" id="myForm">
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control" />
+                                    <span id="mensajeErrorEmail" class="hint"></span>
+
+                                </div> 
+                                
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control" />
+                                    <span id="mensajeErrorPassword1" class="hint"></span>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="password">Repeat Password</label>
+                                    <input type="password" name="password" id="password2" class="form-control" />
+                                    <span id="mensajeErrorPassword2" class="hint"></span>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="provincia">Provincia</label>
+                                    <select name="provincia" id="provincia" class="form-control">
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Girona">Girona</option>
+                                        <option value="Lleida">Lleida</option>
+                                        <option value="Tarragona">Tarragona</option>
+                                    </select>
+                                </div>
+                    
+                    
+                                <div class="form-check">
+                                    <input type="checkbox" id="accept-terms" class="form-check-input">
+                                    <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
+                                </div>
+                                <button type="submit" id="enviar" class="btn btn-outline-primary">Submit</button>
+                            </form>
+                                          </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  </body>
+</html>
